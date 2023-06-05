@@ -3,7 +3,7 @@ const axios = require('axios');
 const cors = require('cors');
 
 const PORT = 5001;
-const VALIDATE_URL = 'https://lens-pwa-api.veryfi.com/rest/validate_partner';
+const VALIDATE_URL = 'https://lens.veryfi.com/rest/validate_partner';
 const CLIENT_ID = 'YOUR_CLIENT_ID_HERE'; // make sure to keep it as a secret
 
 const app = express();
