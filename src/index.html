@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="output.css">
+      <title>Lens For Browser Demo</title>
+    </head>
+    <body class="absolute bg-[#171C3A] flex flex-co h-full w-full justify-center items-center overflow-hidden">
+      <div id="status" class="text-center text-white font-bold font-mono text-[60px]"></div>
+      <div id="preview" class="absolute top-5 flex flex-col max-h-[60vh] max-w-[300px]">
+      </div>
+     <div id="veryfi-container" class="h-[100vh] flex items-center justify-center overflow-hidden">
+      <button
+      class="absolute bottom-8 sm:bottom-16 left-0 right-0 ml-auto mr-auto border-4 border-white-600 hover:bg-white/50 rounded-full w-16 h-16 z-50"
+      onclick="captureWasm()"
+    ></button>
+     </div>
+    </body>
+    <script type="module" src="./index.js"></script>
+</html>

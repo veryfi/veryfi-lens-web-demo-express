@@ -1,0 +1,23 @@
+{
+  "name": "veryfi-lens-wasm",
+  "version": "1.1.5",
+  "description": "Lens For Web SDK with WASM",
+  "main": "veryfi-lens.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/veryfi/veryfi-lens-wasm"
+  },
+  "scripts": {
+    "setup": "node setup.mjs"
+  },
+  "bin": {
+    "veryfi-lens-wasm-setup": "./setup.sh"
+  },
+  "author": "George Veryfi",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "inquirer": "^8.0.0",
+    "path": "^0.12.7"
+  }
+}
