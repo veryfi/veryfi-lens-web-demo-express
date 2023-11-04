@@ -1,1 +1,6 @@
 node_modules/
+.env
+.idea/veryfi-lens-web-demo-express.iml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/jsLibraryMappings.xml
