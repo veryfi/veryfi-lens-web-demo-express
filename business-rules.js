@@ -59,7 +59,7 @@ function validateBusinessRules(veryfi_client, json_response, ip_address) {
         return getDocumentInformation(json_response, `${REJECTED} ${NO_DOCUMENT}`);
     }
 
-    if (json_response.meta.fraud.color === 'red' && json_response.meta.fraud.attribution !== "Digital background") {
+    if (json_response.meta.fraud.color === 'red') {
         veryfi_client.add_tag(document_id, REJECTED).then().catch();
         veryfi_client.add_tag(document_id, FRAUD_DETECTED).then().catch();
         return getDocumentInformation(json_response, `${REJECTED} ${FRAUD_DETECTED}`);
