@@ -11,10 +11,11 @@ This project is a demo to showcase how you can integrate Lens into your web app.
 
 <img src="flow.png">
 
-The server side is a simple Node.js's Express server. To get started, first make sure you have a valid client ID in `server.js` and other credentials in `src/index.js`:
+The server side is a simple Node.js's Express server. To get started, first make sure you have a valid credentials in `server.js`:
 
 ```
-const CLIENT_ID = "YOUR_CLIENT_ID_HERE"; // make sure to keep it as a secret
+const CLIENT_ID = "YOUR_CLIENT_ID_HERE"; // make sure to keep them as a secret
+const CLIENT_SECRET = "YOUR_CLIENT_SECRET_HERE";
 const API_KEY = "YOUR_API_KEY";
 const USERNAME = "YOUR_USERNAME";
 ```
@@ -24,9 +25,14 @@ Install dependencies:
 npm install
 ```
 
-To start the server on port 5001:
+To start the backend server on port 5001:
 ```
 npm start
+```
+
+To start the front-end server on port 8080:
+```
+npm src/http-server.js
 ```
 
 To change classes run:
