@@ -32,7 +32,7 @@ npm start
 
 To start the front-end server on port 8080:
 ```
-npm src/http-server.js
+node src/http-server.js
 ```
 
 To change classes run:
